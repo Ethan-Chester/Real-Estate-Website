@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+
+:root {
+    --animation-curve: cubic-bezier(.3, .5, .5, 1);
+    --animation-curve2: cubic-bezier(3, 0.9, 1, 1.55);
+}
+
+::selection {
+    background: #3AF5FF;
+}
+
+body::-webkit-scrollbar {
+    background-color: rgb(255, 255, 255);
+    width: 0;
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    height: 30%;
+}
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: grey;
+}
+
+/* PAGE TRANSITION */
+
+.page-transition {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+
+    transition: transform 0.6s var(--animation-curve);
+}
+  
+
+
+  
+/* INDEX.HTML */
+
+
+.view1 {
+    display: flex;
+    
+}
+
+.view1-child{
+    flex: 1;
+    
+}
+  
+.view1-child.right {
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    position: relative;
+}
+  
+.view1-child.left {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.view1-child-left-text{
+    position: relative;
+    top: 18%;
+    text-align: center;
+}
+
+.view1-child:first-child {
+    height: 98vh;
+}
+
+.view1-right-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    
+}
+
+.view1-content1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 5;
+}
+
+.view1-tagline, .view1-tagline-main{
+    font-family: "Anek Devanagari";
+}
+
+.view1-tagline{
+    font-weight: 450;
+    margin: 12px;
+    
+    font-size: 1.1em;
+}
+.view1-tagline-main{
+    font-weight: 500;
+    margin: 1px;
+    font-style: bold;
+    font-size: 3em;
+    line-height: 70px;
+    
+}
+
+.view1-logo{
+    font-family: "Anek Devanagari";
+    transition: all .3s;
+}
+
+.view1-logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.view1-logo:hover{
+    letter-spacing: 3px;
+}
+
+.view1-child-left-logo{
+    margin-left: 30px;
+}
+
+/* .view1-child-right-text1{
+    
+    position: absolute;
+  
+}
+
+.view1-child-right-text1 h1{
+    
+    margin-left: 30px;
+    margin-top: 35px;
+    color: white;
+    font-family: "Anek Devanagari";
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 25px;
+    font-style: bold;
+  
+} */
+
+
+.view1-child-right-location{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    
+    right: 25px;
+    bottom: 25px;
+    width: 250px;
+    
+
+}
+
+.view1-child-right-location h1{
+    font-family: "Anek Devanagari";
+    margin-left: 25px;
+    margin-right: 100px;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: .2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+.view1-right-loc-symbol{
+    width:60px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    border-radius: 50px;
+}
+
+.view1-child-right-price{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    right: 115px;
+    top: 25px;
+}
+
+.view1-child-right-price h1{
+    font-family: "Anek Devanagari";
+    margin: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: .2px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+
+.view1-child-right-name{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    right: 282px;
+    top: 25px;
+}
+
+.view1-child-right-name h1{
+    font-family: "Anek Devanagari";
+    margin: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: .2px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+
+.view1-child-right-more{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+    right: 25px;
+    top: 25px;
+}
+
+.view1-child-right-more a{
+    font-family: "Anek Devanagari";
+    margin: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-decoration: none;
+    color: black;
+}
+
+.view1-child-right-name, .view1-child-right-price, .view1-child-right-location, .view1-child-right-more{
+    transition: all .15s;
+    z-index: 9;
+}
+
+.view1-child-right-name:hover, .view1-child-right-price:hover{
+    transform: scale(1.035);
+    cursor: default;
+}
+
+.view1-child-right-location:hover{
+    /* border: 7px, solid, #3AF5FF; */
+    width: 710px;
+    cursor: pointer;
+}
+
+.view1-child-right-location:hover h1{
+    
+    left: 0;
+}
+
+.view1-child-right-more:hover{
+    background-color: #3AF5FF;
+    transform: scale(1.05);
+}
+
+.view1-child-right-cover{
+    width: 100%;
+    height: 100%;
+    
+    
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    z-index: 8;
+    
+    border-radius: 30px;
+    
+}
+.view1-child-right-cover-button{
+    width: 10%;
+    height: 10%;
+    left: 25px;
+    bottom: 25px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: white;
+    
+    font-family: "Anek Devanagari";
+
+    
+    background-color: rgba(0,0,0,1);
+    transition: all .5s;
+    border-radius: 15px;
+    
+}
+
+/* .view1-child-right-cover-button p{
+    position: absolute;
+    left: 0;
+    
+    font-size: 45px;
+    color: white;
+    
+    font-family: "Anek Devanagari";
+    
+} */
+
+
+
+.view1-child-right-cover-button:hover{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%; 
+    left: 0;
+    bottom: 0;
+    color: rgba(0,0,0,0);
+    
+}
+
+
+
+
+.contact-button{
+    background-color: black;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 170px;
+    border-radius: 45px;
+    height: 45px;
+    transition: all .35s;
+}
+
+.contact-button h1{
+    color: white;
+    font-family: "Anek Devanagari";
+    margin-left: 65px;
+    margin-top: 8px;
+    position: absolute;
+    font-size: 18px;
+    z-index: 16;
+    transition: all .35s;
+}
+
+.contact-button-slider{
+    background-color: #3af5ff;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 45px;
+    margin-top: 4.5px;
+    margin-left: 4.5px;
+    top: 0;
+    
+    transition: all .35s;
+}
+
+.contact-button:hover{
+    padding: 2px;
+    cursor: pointer;
+}
+
+.contact-button:hover .contact-button-slider{
+    width: 100%;
+    height: 100%;
+    margin-left: -2px;
+    margin-top: 0px;
+}
+
+.contact-button:hover h1{
+    color: black;
+    margin-left: 18px;
+    padding-right: 10px;
+}
+
+/* LISTING1.HTML */
+
+.listing-part1{
+    width: 100%;
+    font-family: "Anek Devanagari";
+    text-align: center;
+    position: relative;
+}
+
+.listing-part1-text1{
+    position: absolute;
+    width: 100%;
+
+
+}
+
+.listing-part1-text1 h1{
+    font-weight: 500;
+    letter-spacing: 12px;
+    font-size: 30px;
+}
+
+.listing-part1-text2{
+    top: 0;
+    position: absolute;
+    width: 100%;
+
+}
+
+.listing-part1-text2 h1{
+    font-weight: 900;
+    font-size: 100px;
+    letter-spacing: 8px;
+    
+}
+
+
+.listing1-main-image{
+    position: absolute;
+    top: 340px;
+    width: 90%;
+    left: 4.5%;
+    border: 4px, solid, black;
+    border-radius: 25px;
+}
+
+.view2 {
+    display: flex;
+    position: absolute;
+    width: 90.5%;
+    left: 4.4%;
+    top:1400px;
+}
+
+.view2-child{
+    flex: 1;
+}
+  
+.view2-child.right {
+    background-color: rgb(46, 235, 219);
+    flex: .7;
+    position: relative;
+    height: 300px;
+    border-radius: 25px;
+    
+}
+  
+.view2-child.left {
+    position: relative;
+    border-radius: 25px;
+    margin-right: 60px;
+}
+
+.view2-child-right-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 4px, solid, black;
+}
+
+.view2-child.left h1{
+    font-family: "Anek Devanagari";
+    font-size: 30px;
+}
+
+.view2-child.left ul{
+    font-family: "Anek Devanagari";
+    font-size: 30px;
+
+}
+
+/* About HTML */
+
+.about-part1 h1{
+    font-family: "Heebo";
+    font-weight: 400;
+    font-size:48px;
+    line-height: 60px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+}
+
+.about-line1{
+    height: 1.5px;
+    background-color: black;
+}
+
+.about-view1{
+    display: flex;
+
+    width: 100%;
+    height: 700px;
+}
+
+.about-view1-child{
+    flex: 1;
+}
+
+.about-view1-child.right{
+    flex: 1.8;
+}
+
+
+.about-view1-child.left{
+    margin-left: 80px;
+    padding: 90px;
+    font-family: "Anek Devanagari";
+}
+
+.about-view1-child.left h1{
+    font-weight: 600;
+}
+
+.about-view1-child.left h2{
+    font-weight: 400;
+    width: 500px;
+    line-height: 50px;
+}
+
+.about-view1-child-img{
+    width: 90%;
+    height: 90%;
+    margin-top: 35px;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.about-line2{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    height: 2.5px;
+    background-color: black;
+}
+
+.about-view1-img2{
+    width: 100%;
+    height: 900px;
+}
